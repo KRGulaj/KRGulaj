@@ -8,7 +8,7 @@ I build CFD tools meant to be driven by automation, then by AI agents under the 
 
 Python bindings to SALOME SMESH and Open CASCADE, packaged as one self-contained wheel. No SALOME platform, no CORBA, no GUI.
 
-I built it to run unattended inside a CFD workflow. The package exposes a stateful CAD modelling session with persistent ids and snapshots, plus SMESH's meshing pipeline, across 197 top-level names. It is on PyPI.
+I built it to run unattended inside a CFD workflow. Its core is SMESH's structured meshing: mapped quadrangle faces, block-structured hexahedra, swept prisms and radial O-grids, with exact control of the node spacing on every edge and viscous layers grown from named walls. Body-fitted Cartesian and free algorithms cover the rest, and one model mixes them per sub-shape. Around the mesher sits a stateful CAD modelling session with persistent ids and snapshots. The package exposes 21 meshing algorithms and 31 hypotheses across 216 top-level names, carries OCCT, Boost and VTK privately inside the wheel, and is on PyPI.
 
 ## [mesher-baseline](https://github.com/KRGulaj/mesher-baseline)
 
